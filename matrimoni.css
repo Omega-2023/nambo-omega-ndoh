@@ -1,6 +1,11 @@
 *{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;}
 
 
+header{
+	width: 100%;
+	overflow-x: hidden;
+}
+
 nav{
 	background-color: #e84393;
 	display: flex; 
@@ -42,20 +47,56 @@ nav{
 }
 
 
+.hamburger {
+    cursor: pointer;
+    width: 1cm;
+    height: 1cm;
+    position: relative;
+}
+
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    width: 1cm;
+    height: .3rem;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    border-radius: 2rem;
+}
+
+.hamburger-middle{
+   transform: translateY(0.33cm);
+}
+
+.hamburger-bottom{
+    transform: translateY(0.66cm);
+ }
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-top {
+    transform: translateY(0.5cm) rotateZ(45deg);
+}
+.open .hamburger-bottom{
+    transform: translateY(0.5cm) rotateZ(-45deg);
+}
+
+
  
 #main{
 	font-family: sans-serif;
-	width: 100%;
 	background-size: cover;
-	position: relative;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-				url('img/banner.jpg');
-	height: 100vh;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-	align-items: center;
-}
+				url('img/banner.jpg'); 
+	overflow-x: hidden;
+}  
+
+
 .box{
 	background: white;
 	width: 450px;
