@@ -54,6 +54,11 @@ nav{
     position: relative;
 }
 
+.active{
+	text-decoration:  underline;
+	padding: 0px 3px;
+}
+
 
 .hamburger-top,
 .hamburger-middle,
@@ -63,7 +68,7 @@ nav{
     height: .3rem;
     top: 0px;
     left: 0px;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     border-radius: 2rem;
 }
 
