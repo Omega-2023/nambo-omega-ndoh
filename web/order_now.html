@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content=:with=device-width, initial-scale=1.0">
+    <title>Nambo's Agrochemical Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+<section  class="sub-header">
+     <nav>
+         <a herf=".html"><img src="images/logo2.png" class="logo"></a>  
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                 <li><a href="Index.html">HOME</a></li>
+                 <li ><a href="about.html">ABOUT</a></li>
+                 <li><a href="products.html">PRODUCTS</a></li>
+                 <li id="active_link"><a href="order_now.html">ORDER NOW</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         
+            <h1>Place Your Order</h1>
+
+        </section>
+
+        <!-------------- order page content------------------>
+
+        <section class="order-now">
+            <div class="row">
+                <div class="order-left">
+                    <img src="images/kundem.jpg">
+                    <h2></h2>
+                    <a href="" class="hero-btn">Buy Now</a>
+                </div>
+                <div class="order-right">
+                    <img src="images/okum.jpg">
+                    <h2></h2>
+                    <a href="" class="hero-btn">Buy Now</a>
+                </div>
+                <div class="order-left">
+                <img src="images/COCOA.jpg">
+                <h2></h2>
+                <a href="" class="hero-btn">Buy Now</a>
+                </div>
+                <div class="order-right">
+                    <img src="images/sss.jpg">
+                    <h2></h2>
+                    <a href="" class="hero-btn">Buy Now</a>
+            </div>
+            <div class="order-right">
+                <img src="images/all.webp">
+                <h2></h2>
+                <a href="" class="hero-btn">Buy Now</a>
+            </section>
+
+        <section>
+                <div class="comment-box">
+
+                    <h3>Leave a Comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea row="5" placeholder="Your Comment">
+                        </textarea>
+                        <button type="submit" class="hero-btb red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--------- Footer ----------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>J.A Nambo Agro Shop was Established by Nambo's Family in 2022
+                Mr. Nambo, who is the current CEO for J.A Agro Shop. We basically
+                deals in Distribution, Wholeseal and Retail of all kinds of Pesticides,
+                Protective Materials, Farming Implements, Fertilizers and Spraying Machines.
+                We also offer Machine Repairs, maintenance and servicing.</p>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+                <p>Made with <i class="fa fa-heart-o"></i> Nambo Omega Ndoh</p>
+         </section>
+
+       
+
+
+
+
+
+<!------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
